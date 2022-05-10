@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Wordle Remake</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+  </head>
+  <body onload="mainJS();">
+    <div class="main">
+      <h1>Wordle Remake</h1>
+      <div id="game">
+        <table id='tbl'></table>
+      </div>
+      <br><br>
+      <div class="keyboard">
+        <table id="keyboardR0">
+          <tr id="keyR0">
+            <td id="keyR0C0"><input class="key" id="keyQ" type="button" value="Q"></td>
+            <td id="keyR0C1"><input class="key" id="keyW" type="button" value="W"></td>
+            <td id="keyR0C2"><input class="key" id="keyE" type="button" value="E"></td>
+            <td id="keyR0C3"><input class="key" id="keyR" type="button" value="R"></td>
+            <td id="keyR0C4"><input class="key" id="keyT" type="button" value="T"></td>
+            <td id="keyR0C5"><input class="key" id="keyY" type="button" value="Y"></td>
+            <td id="keyR0C6"><input class="key" id="keyU" type="button" value="U"></td>
+            <td id="keyR0C7"><input class="key" id="keyI" type="button" value="I"></td>
+            <td id="keyR0C8"><input class="key" id="keyO" type="button" value="O"></td>
+            <td id="keyR0C9"><input class="key" id="keyP" type="button" value="P"></td>
+          </tr>
+        </table>
+        <table id="keyboardR1">
+          <tr id="keyR1">
+            <td id="keyR1C0"></td>
+            <td id="keyR1C1"><input class="key" id="keyA" type="button" value="A"></td>
+            <td id="keyR1C2"><input class="key" id="keyS" type="button" value="S"></td>
+            <td id="keyR1C3"><input class="key" id="keyD" type="button" value="D"></td>
+            <td id="keyR1C4"><input class="key" id="keyF" type="button" value="F"></td>
+            <td id="keyR1C5"><input class="key" id="keyG" type="button" value="G"></td>
+            <td id="keyR1C6"><input class="key" id="keyH" type="button" value="H"></td>
+            <td id="keyR1C7"><input class="key" id="keyJ" type="button" value="J"></td>
+            <td id="keyR1C8"><input class="key" id="keyK" type="button" value="K"></td>
+            <td id="keyR1C9"><input class="key" id="keyL" type="button" value="L"></td>
+          </tr>
+        </table>
+        <table id="keyboardR2">
+          <tr id="keyR2">
+            <td id="keyR2C0"></td>
+            <td id="keyR2C1"></td>
+            <td id="keyR2C2"><input class="key" id="keyZ" type="button" value="Z"></td>
+            <td id="keyR2C3"><input class="key" id="keyX" type="button" value="X"></td>
+            <td id="keyR2C4"><input class="key" id="keyC" type="button" value="C"></td>
+            <td id="keyR2C5"><input class="key" id="keyV" type="button" value="V"></td>
+            <td id="keyR2C6"><input class="key" id="keyB" type="button" value="B"></td>
+            <td id="keyR2C7"><input class="key" id="keyN" type="button" value="N"></td>
+            <td id="keyR2C8"><input class="key" id="keyM" type="button" value="M"></td>
+            <td id="keyR2C9"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
