@@ -1,1 +1,52 @@
+body {
+  overflow-y: hidden;
+}
 
+.col {
+  text-align: center;
+}
+
+.main {
+  width: 400px;
+  height: 97vh;
+  margin-left: calc(50% - 200px);
+}
+
+.input {
+  width: 69.5px;
+  height: 69.5px;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  background-color: lightGrey;
+}
+
+.input:disabled {
+  background-color: rgba(0,0,0,0.5);
+  color: lightGrey;
+}
+
+/* Keyboard */
+
+.keyboard {
+  margin-left: -150px;
+}
+
+#keyboardR0 {
+  margin-left: 0px;
+}
+
+#keyboardR1 {
+  margin-left: 17.5px; /* 35 / 2 */
+}
+
+#keyboardR2 {
+  margin-left: 87.5px;
+}
+
+.key {
+  width: 70px;
+  height: 70px;
+}
